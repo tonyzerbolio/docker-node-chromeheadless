@@ -2,7 +2,7 @@
 
 Container with node and chrome headless to be able to run Angular 2+ unit tests with GitLab CI.
 
-## gitlab.yml
+## gitlab-ci.yml
 ```
 image: humpedli/docker-node-chromeheadless
 
