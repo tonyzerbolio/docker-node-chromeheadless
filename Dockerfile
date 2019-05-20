@@ -19,6 +19,11 @@ RUN apk -U --no-cache \
     grep \
     udev
 
+# Install Java 8
+RUN apk update
+RUN apk fetch openjdk8
+RUN apk add openjdk8
+
 # Minimize size
 RUN apk del --purge --force linux-headers binutils-gold gnupg zlib-dev libc-utils
 RUN rm -rf /var/lib/apt/lists/* \
