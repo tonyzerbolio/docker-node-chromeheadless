@@ -1,4 +1,4 @@
-FROM node:8-alpine
+FROM node:lts-alpine
 
 # Update apk repositories
 RUN echo "http://dl-2.alpinelinux.org/alpine/edge/main" > /etc/apk/repositories
